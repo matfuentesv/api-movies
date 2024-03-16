@@ -1,0 +1,50 @@
+{
+	"info": {
+		"_postman_id": "58746320-452c-489d-b2d9-a37396d7f9a2",
+		"name": "api-movies",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1152972",
+		"_collection_link": "https://galactic-sunset-296695.postman.co/workspace/1.--Configuration~48e44916-e4da-4990-b641-c948b388dcab/collection/1152972-58746320-452c-489d-b2d9-a37396d7f9a2?action=share&source=collection_link&creator=1152972"
+	},
+	"item": [
+		{
+			"name": "getAllMovies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/api/peliculas",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"peliculas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findMovieById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/api/peliculas/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"peliculas",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -13,9 +13,9 @@ public class Movie {
 
     private int id;
     private String titulo;
-    private int año;
+    private int ano;
     private String director;
-    private String género;
+    private String genero;
     private String sinopsis;
 
 }
