@@ -2,15 +2,24 @@ package cl.company.movies.apimovies.respository.impl;
 
 import cl.company.movies.apimovies.model.Movie;
 import cl.company.movies.apimovies.respository.Repository;
-import org.springframework.stereotype.Component;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.*;
 
 import java.util.ArrayList;
 import java.util.List;
 
 
-@Component
+@org.springframework.stereotype.Repository
 public class RepositoryImpl implements Repository {
 
+    @Autowired
+    private JdbcTemplate jdbcTemplate;
+
+    @Override
+    public List<String> findAllNames() {
+        return jdbcTemplate.queryForList("SELECT PNOMBRE_PROF FROM PROFESIONAL", String.class);
+    }
 
     @Override
     public List<Movie> movies() {

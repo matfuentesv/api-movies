@@ -18,6 +18,7 @@ public class MovieServiceImpl implements MovieService {
     @Override
     public List<Movie> allMovie() {
         log.info("Se solicitó la lista de todas las películas.");
+        List<String>profesional = repository.findAllNames();
         return repository.movies();
     }
 

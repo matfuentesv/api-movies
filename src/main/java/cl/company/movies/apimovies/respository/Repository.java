@@ -7,5 +7,6 @@ import java.util.List;
 public interface Repository {
 
     List<Movie> movies();
+    List<String> findAllNames();
 
 }
