@@ -4,7 +4,7 @@ import cl.company.movies.apimovies.model.Movie;
 import cl.company.movies.apimovies.respository.Repository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.stereotype.*;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,7 +18,7 @@ public class RepositoryImpl implements Repository {
 
     @Override
     public List<String> findAllNames() {
-        return jdbcTemplate.queryForList("SELECT PNOMBRE_PROF FROM PROFESIONAL", String.class);
+        return jdbcTemplate.queryForList("SELECT NOMBRE_COMUNA FROM COMUNA", String.class);
     }
 
     @Override
